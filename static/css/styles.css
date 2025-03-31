@@ -286,16 +286,18 @@ section {
     background-color: var(--light-gray);
 }
 
-.map-placeholder {
-    height: 400px;
-    background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
+#g-mapdisplay {
+    max-width: 100%;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
 }
 
+#g-mapdisplay iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 /* Common Page Elements */
 /* Page Banner */
 .page-banner {
@@ -405,3 +407,19 @@ section {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.faq-content {
+    display: none;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+.faq-item.active .faq-content {
+    display: block;
+}
+
+.faq-header {
+    cursor: pointer;
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}

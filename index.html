@@ -45,7 +45,7 @@
         </div>
     </section>
     
-    <!-- Quick Info Bar -->
+    <!-- Quick Info-->
     <section class="quick-info">
         <div class="container">
             <div class="info-item">
@@ -84,17 +84,17 @@
             <div class="experience-grid">
                 <div class="experience-item">
                     <h3>Scenic Views</h3>
-                    <img src="static/images/scenic-view.jpg" alt="Panoramic view of Pittsburgh from the Duquesne Incline">
+                    <img src="static/images/main_2.png" alt="Panoramic view of Pittsburgh from the Duquesne Incline">
                     <p>Enjoy breathtaking views of Pittsburgh's skyline from our observation deck.</p>
                 </div>
                 <div class="experience-item">
                     <h3>Historical Tours</h3>
-                    <img src="static/images/historical-tour.jpg" alt="Historical tour of the Duquesne Incline">
+                    <img src="static/images/main_3.png" alt="Historical tour of the Duquesne Incline">
                     <p>Learn about the rich history and engineering marvel of the incline.</p>
                 </div>
                 <div class="experience-item">
                     <h3>Gift Shop</h3>
-                    <img src="static/images/gift-shop.jpg" alt="Duquesne Incline gift shop">
+                    <img src="static/images/main_4.png" alt="Duquesne Incline gift shop">
                     <p>Take home a piece of Pittsburgh history from our unique gift shop.</p>
                 </div>
             </div>
@@ -105,9 +105,49 @@
     <section class="map-section">
         <div class="container">
             <h2>Find Us</h2>
-            <div class="map-placeholder">
-                <!-- Google Maps will be embedded here using JavaScript -->
-                <p>Google Maps Loading...</p>
+            <div id="g-mapdisplay">
+                <iframe 
+                    src="https://www.google.com/maps/embed/v1/place?q=duquesne+incline&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" 
+                    frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-header">How do I pay for the ride? <span class="faq-arrow">▼</span></h3>
+                <div class="faq-content">
+                    <p>Exact cash fare upon arrival. There are no tickets, no advance payment, no reservations, and no debit or credit cards. The Duquesne Incline is part of the transportation system in Pittsburgh and uses the same <strong>cash</strong> fare system as the buses and trolleys. A change machine is available for your convenience. Having the exact fare in hand speeds up the payment process considerably.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-header">Do Pennsylvania Seniors ride free? <span class="faq-arrow">▼</span></h3>
+                <div class="faq-content">
+                    <p>Pennsylvania Seniors 65 and older who present a <strong>BLUE</strong> or <strong>YELLOW</strong> PRT card or a Senior ConnectCard ride free; otherwise, the adult rate applies. The Duquesne Incline is required to request a Pennsylvania Senior Citizen Transit ID card as proof of discount eligibility, no exceptions, in order to be reimbursed by the Commonwealth of PA.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-header">Are there restrooms available? <span class="faq-arrow">▼</span></h3>
+                <div class="faq-content">
+                    <p>Sorry, no restrooms. The Duquesne Incline has been part of Pittsburgh's transportation system since 1877, like a trolley or the cable cars of San Francisco.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-header">When are the busiest times? <span class="faq-arrow">▼</span></h3>
+                <div class="faq-content">
+                    <p>Saturday's and Sunday's after noon are our busiest times. Expect to wait in line for about 10 minutes in both directions.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-header">Is the Duquesne Incline wheelchair accessible? <span class="faq-arrow">▼</span></h3>
+                <div class="faq-content">
+                    <p>There are many steps to traverse from the lower station parking lot. The Upper Station, located at 1220 Grandview Ave, Pittsburgh, PA 15211, is wheelchair accessible. Our observation deck is also wheelchair accessible. The historic (original) Incline cars can accommodate wheelchairs up to 25 inches in width.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -115,38 +155,18 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-info">
+            <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="static/images/logo-white.png" alt="Duquesne Incline Logo">
+                    <img src="../static/images/logo.png" alt="Duquesne Incline Logo">
                 </div>
                 <div class="footer-contact">
                     <p>1197 W Carson St, Pittsburgh, PA 15219</p>
                     <p>(412) 381-1665 | <a href="mailto:info@duquesneincline.org">info@duquesneincline.org</a></p>
                 </div>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="views/about.html">About</a></li>
-                    <li><a href="views/visit.html">Visit</a></li>
-                    <li><a href="views/experience.html">Experience</a></li>
-                    <li><a href="views/education.html">Education</a></li>
-                    <li><a href="views/gift-shop.html">Gift Shop</a></li>
-                    <li><a href="views/mailing-list.html">Contact</a></li>
-                </ul>
+            <div class="copyright">
+                <p>&copy; 2025 Duquesne Incline. Coded by Bo.</p>
             </div>
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="https://facebook.com" aria-label="Facebook"><img src="static/images/facebook-icon.png" alt="Facebook"></a>
-                    <a href="https://instagram.com" aria-label="Instagram"><img src="static/images/instagram-icon.png" alt="Instagram"></a>
-                    <a href="https://twitter.com" aria-label="Twitter"><img src="static/images/twitter-icon.png" alt="Twitter"></a>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>&copy; 2025 Duquesne Incline</p>
         </div>
     </footer>
 </body>
