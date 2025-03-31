@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duquesne Incline Pittsburgh Website</title>
-    <meta name="description" content="Ride the historic Duquesne Incline, a Pittsburgh landmark since 1877. Experience breathtaking views and learn about the city's rich history.">
+    <title>About the Duquesne Incline - Historic Pittsburgh Landmark</title>
+    <meta name="description" content="Learn about the rich history of the Duquesne Incline, a historic cable car system in Pittsburgh since 1877.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Lora:ital@0;1&display=swap">
+    <script src="../static/js/main.js" defer></script>
+    <script src="../static/js/about.js" defer></script>
+    <link rel="stylesheet" href="../static/css/about.css">
     <link rel="stylesheet" href="../static/css/styles.css">
 </head>
-
 <body>
-    <!-- Header with Navigation -->
+    <!-- Header Section -->
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -18,14 +21,9 @@
                 </a>
             </div>
             <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
                 <ul class="nav-list">
-                    <li class="nav-item active"><a href="../index.html">Home</a></li>
-                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
+                    <li class="nav-item active"><a href="about.html">About</a></li>
                     <li class="nav-item"><a href="visit.html">Visit</a></li>
                     <li class="nav-item"><a href="experience.html">Experience</a></li>
                     <li class="nav-item"><a href="education.html">Education</a></li>
@@ -36,6 +34,182 @@
         </div>
     </header>
 
-    <div>This is the about page</div>
+    <!-- Page Title Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>The Historic Duquesne Incline: Pittsburgh's Living Legacy</h1>
+        </div>
+    </section>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> &gt; <span>About</span>
+        </div>
+    </div>
+
+    <!-- Introduction Section -->
+    <section class="about-intro">
+        <div class="container">
+            <div class="about-content">
+                <p class="lead">The Duquesne Incline stands as one of the few remaining inclines in the United States, serving both as a functional transit system and a beloved historical landmark. Since 1877, this iconic cable car has connected Pittsburgh's Mount Washington neighborhood with the city below, offering both practical transportation and breathtaking views of the Steel City's skyline.</p>
+                <div class="about-image">
+                    <img src="../static/images/duquesne-incline-historic.jpg" alt="Historic photo of the Duquesne Incline">
+                    <p class="image-caption">The Duquesne Incline in the early 20th century</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Timeline Section -->
+    <section class="history-section" id="history">
+        <div class="container">
+            <h2>A Journey Through Time</h2>
+            
+            <div class="timeline-navigation">
+                <button class="timeline-nav active">Early Origins (1854-1877)</button>
+                <button class="timeline-nav">Operational History (1877-Present)</button>
+            </div>
+            
+            <div class="timeline-panel" id="early-origins">
+                <h3>Early Origins (1854-1877)</h3>
+                <div class="history-content">
+                    <div class="history-text">
+                        <p>The Duquesne Incline follows very closely the tracks of an early coal hoist. Historical newspapers indicate the existence of such a conveyance as early as 1854, which residents referred to as "Kirk Lewis' incline" located on the present site of The Duquesne Incline's Upper Station.</p>
+                        <p>During this period, Grandview Avenue was known as High Street, and the surrounding area was just beginning its transformation from farmland to residential properties. This pleasantly-situated acreage was perfect for absorbing Pittsburgh's expanding population, but the challenge of easy access remained unsolved.</p>
+                        <p>Although plans for a freight and passenger incline existed much earlier, securing financial backing proved exceedingly difficult—even for the modest sum of $47,000—delaying actual construction. Eventually, these difficulties were overcome, and the Incline was built, opening to the public on May 20, 1877.</p>
+                        <p>The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher for Kirk Bigham and Associates. Diescher, an engineer, would become the country's foremost builder of inclines and went on to design and build most of those that followed.</p>
+                    </div>
+                    <div class="history-image">
+                        <img src="../static/images/construction-era.jpg" alt="Coal Hill during the construction era">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-panel" id="operational-history">
+                <h3>Operational History (1877-Present)</h3>
+                <div class="history-content">
+                    <div class="history-text">
+                        <p>At the time of its public opening, the Duquesne Incline was one of four inclined planes serving the summit of Coal Hill, which later came to be known as Mount Washington. From 1877 until 1962, it was operated by The Duquesne Inclined Plane Company.</p>
+                        <p>Following a brief closure, local residents formed the Society for the Preservation of The Duquesne Heights Incline in 1964. This neighborhood group had successfully rescued, repaired, and reopened the Incline in 1963, determined to preserve this vital piece of Pittsburgh's heritage.</p>
+                        <p>Since 1964, the Society has continuously operated the Incline, while ownership transferred to the Port Authority of Allegheny County. Their mission remains focused on restoring and rehabilitating the cars, equipment, and both stations, while establishing the entire operation as both a reliable commuter facility and a popular visitor attraction.</p>
+                        <p>Today, the Duquesne Incline stands as a testament to community preservation efforts and continues to serve as both a practical transportation method and a beloved tourist destination.</p>
+                    </div>
+                    <div class="history-image">
+                        <img src="../static/images/preservation-society.jpg" alt="Preservation Society volunteers">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Facts Section -->
+    <section class="technical-facts" id="facts">
+        <div class="container">
+            <h2>Technical Specifications</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="../static/images/icons/calendar.png" alt="Calendar icon">
+                    </div>
+                    <h3>Opening Date</h3>
+                    <p>May 20, 1877</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="../static/images/icons/money.png" alt="Money icon">
+                    </div>
+                    <h3>Original Cost</h3>
+                    <p>$47,000</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="../static/images/icons/ruler.png" alt="Ruler icon">
+                    </div>
+                    <h3>Track Length</h3>
+                    <p>794 feet</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="../static/images/icons/mountain.png" alt="Mountain icon">
+                    </div>
+                    <h3>Elevation</h3>
+                    <p>400 feet</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="../static/images/icons/angle.png" alt="Angle icon">
+                    </div>
+                    <h3>Grade</h3>
+                    <p>30.5 degrees</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="../static/images/icons/speed.png" alt="Speed icon">
+                    </div>
+                    <h3>Speed</h3>
+                    <p>6 mph</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-icon">
+                        <img src="../static/images/icons/people.png" alt="People icon">
+                    </div>
+                    <h3>Capacity</h3>
+                    <p>18 per car</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preservation Society Section -->
+    <section class="preservation-society" id="society">
+        <div class="container">
+            <h2>The Society for the Preservation of the Duquesne Heights Incline</h2>
+            <div class="society-content">
+                <div class="society-image">
+                    <img src="../static/images/society-volunteers.jpg" alt="Society volunteers working on restoration">
+                </div>
+                <div class="society-text">
+                    <p>The Society for the Preservation of the Duquesne Heights Incline was formed in 1964 by the Duquesne Heights/Mount Washington neighborhood group that had rescued, repaired, and reopened the Incline in 1963. Their mission was to continue to restore and rehabilitate the cars, equipment, and both stations, and to establish the entire operation as a reliable commuter facility and a popular visitor attraction.</p>
+                    <p>For over five decades, this dedicated group of volunteers and staff has worked tirelessly to maintain this historic landmark while ensuring it continues to serve the community. Their efforts have helped preserve a vital piece of Pittsburgh's industrial heritage for future generations.</p>
+                    <p>The Society continues to rely on community support and visitor contributions to fund ongoing maintenance and preservation efforts. Memberships in the society are available, offering various benefits while supporting the continued operation of this historic treasure.</p>
+                    <div class="society-cta">
+                        <a href="contact.html#membership" class="btn btn-primary">Join the Society</a>
+                        <a href="contact.html#donate" class="btn btn-secondary">Make a Donation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Experience this Historic Landmark</h2>
+            <p>Step aboard one of America's few remaining inclines and experience a piece of living history. Whether you're commuting or sightseeing, the Duquesne Incline offers an unforgettable journey and stunning views of Pittsburgh.</p>
+            <div class="cta-buttons">
+                <a href="visit.html" class="btn btn-primary">Plan Your Visit</a>
+                <a href="experience.html" class="btn btn-secondary">Explore Experiences</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../static/images/logo.png" alt="Duquesne Incline Logo">
+                </div>
+                <div class="footer-contact">
+                    <p>1197 W Carson St, Pittsburgh, PA 15219</p>
+                    <p>(412) 381-1665 | <a href="mailto:info@duquesneincline.org">info@duquesneincline.org</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Duquesne Incline. Coded by Bo.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
