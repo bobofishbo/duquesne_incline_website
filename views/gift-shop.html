@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duquesne Incline Pittsburgh Website</title>
-    <meta name="description" content="Ride the historic Duquesne Incline, a Pittsburgh landmark since 1877. Experience breathtaking views and learn about the city's rich history.">
+    <title>Gift Shop - Duquesne Incline</title>
+    <meta name="description" content="Explore our unique selection of Duquesne Incline souvenirs and gifts, including custom-made items only available at our gift shop.">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Lora:ital@0;1&display=swap">
     <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/gift-shop.css">
 </head>
-
 <body>
-    <!-- Header with Navigation -->
+    <!-- Header Section -->
     <header class="site-header">
         <div class="container">
             <div class="logo">
@@ -19,24 +19,142 @@
                 </a>
             </div>
             <nav class="main-nav">
-                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
                 <ul class="nav-list">
-                    <li class="nav-item active"><a href="../index.html">Home</a></li>
+                    <li class="nav-item"><a href="../index.html">Home</a></li>
                     <li class="nav-item"><a href="about.html">About</a></li>
                     <li class="nav-item"><a href="visit.html">Visit</a></li>
-                    <li class="nav-item"><a href="experience.html">Experience</a></li>
-                    <li class="nav-item"><a href="education.html">Education</a></li>
-                    <li class="nav-item"><a href="gift-shop.html">Gift Shop</a></li>
+                    <li class="nav-item active"><a href="gift-shop.html">Gift Shop</a></li>
                     <li class="nav-item"><a href="mailing-list.html">Join</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div>This is the gift shop page</div>
+    <section class="page-banner">
+        <div class="container">
+            <h1>Gift Shop</h1>
+        </div>
+    </section>
+
+    <!-- Breadcrumb Nav -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> &gt; <span>Gift Shop</span>
+        </div>
+    </div>
+
+    <!-- Gift Shop Introduction -->
+    <section class="shop-intro">
+        <div class="container">
+            <div class="shop-content">
+                <div class="shop-text">
+                    <h2>Come Visit Our Gift Shop</h2>
+                    <p class="shop-lead">Discover unique souvenirs and mementos to remember your visit to the historic Duquesne Incline.</p>
+                    <p>We offer many one-of-a-kind items that were custom made exclusively for the Incline. Browse our collection of Pittsburgh memorabilia and take home a special piece of this historic landmark.</p>
+                    <p class="contact-info">For inquiries about specific items, please call: <a href="tel:+14123811665">412-381-1665</a></p>
+                </div>
+                <div class="shop-image">
+                    <img src="../static/images/gift-shop_1.png" alt="Duquesne Incline Gift Shop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Slanted Shot Glass</h3>
+                        <p>Our unique slanted shot glasses are a customer favorite! These specially designed glasses reflect the incline of our historic cable car.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Handmade Wooden Ornament</h3>
+                        <p>This handmade Incline wooden ornament is a big seller and is only available here at our gift shop.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Wendell August Forge Metal Plates</h3>
+                        <p>Browse our full assortment of Wendell August Forge metal plates featuring Pittsburgh landmarks.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Framed Pictures</h3>
+                        <p>All types of pictures, both framed and unframed, capturing the beauty and history of the Duquesne Incline.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Custom Designed Shirts</h3>
+                        <p>Custom designed shirts are available in youth and adult sizes, perfect for showing your Pittsburgh pride.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3>Pittsburgh Postcards</h3>
+                        <p>We also have one of the best selections of postcards in the city, featuring iconic Pittsburgh views.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Info -->
+    <section class="shop-visit-info">
+        <div class="container">
+            <h2>Plan Your Visit</h2>
+            <div class="visit-info-content">
+                <div class="visit-hours">
+                    <h3>Gift Shop Hours</h3>
+                    <p>Our gift shop is open during regular Incline operating hours:</p>
+                    <p><strong>Daily:</strong> 6:30 a.m. to 12:30 a.m.</p>
+                </div>
+                <div class="visit-location">
+                    <h3>Location</h3>
+                    <p>The gift shop is located at the Upper Station:</p>
+                    <address>
+                        1220 Grandview Avenue<br>
+                        Pittsburgh, PA 15211
+                    </address>
+                </div>
+            </div>
+            <div class="visit-cta">
+                <a href="visit.html" class="btn btn-primary">Plan Your Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../static/images/logo.png" alt="Duquesne Incline Logo">
+                </div>
+                <div class="footer-contact">
+                    <p>1197 W Carson St, Pittsburgh, PA 15219</p>
+                    <p>(412) 381-1665 | <a href="mailto:info@duquesneincline.org">info@duquesneincline.org</a></p>
+                </div>
+            </div>
+            <div class="footer-mailing-list">
+                <p>Want to stay updated? <a href="mailing-list.html" class="footer-link">Join our mailing list</a> for the latest news and updates!</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Duquesne Incline. Coded by Bo.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

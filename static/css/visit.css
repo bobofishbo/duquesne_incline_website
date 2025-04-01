@@ -1,0 +1,363 @@
+/* Visit Page Specific Styles */
+/* weather section */
+.weather-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.weather-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.weather-loading {
+    font-size: 16px;
+    color: #555;
+}
+
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-icon img {
+    width: 64px;
+    height: 64px;
+}
+
+.weather-details {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.weather-meta {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Hours & Tickets Section */
+.hours-tickets {
+    background-color: var(--white);
+    padding: 3rem 0;
+}
+
+.info-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hours-info, 
+.tickets-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hours-table,
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.hours-table th,
+.tickets-table th {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: left;
+    padding: 0.75rem;
+}
+
+.hours-table td,
+.tickets-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.hours-table tr:nth-child(even),
+.tickets-table tr:nth-child(even) {
+    background-color: var(--light-gray);
+}
+
+.hours-note {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.payment-info {
+    margin-bottom: 2rem;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+}
+
+.ticket-notes ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    line-height: 1.8;
+}
+
+/* Parking & Directions Section */
+.parking-directions {
+    background-color: var(--light-gray);
+    padding: 3rem 0;
+}
+
+.map-container {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+#incline-map, 
+.map-placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #e8e8e8;
+}
+
+.directions-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.address-info,
+.parking-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.get-directions {
+    margin-top: 1rem;
+}
+
+.parking-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.parking-option {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.parking-option h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+}
+
+.parking-option ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.public-transit {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.transit-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.transit-options li {
+    background-color: var(--light-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Visitor Tips Section */
+.visitor-tips {
+    background-color: var(--white);
+    padding: 3rem 0;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.tip-card {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-icon {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--dark-gray);
+}
+
+/* Nearby Attractions Section */
+.nearby-attractions {
+    background-color: var(--light-gray);
+    padding: 3rem 0;
+}
+
+.attractions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;margin-top: 2rem;
+}
+
+.attraction-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.attraction-card:hover {
+    transform: translateY(-5px);
+}
+
+.attraction-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.attraction-card h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: var(--primary-color);
+}
+
+.attraction-card p {
+    padding: 0 1rem 1rem;
+}
+
+/* Add to your visit.css file */
+.hours-highlight {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.hours-box {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.reservation-note {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.group-rates {
+    margin: 2rem 0;
+}
+
+.group-note {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.group-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.group-table th {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: left;
+    padding: 0.75rem;
+}
+
+.group-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.group-table tr:nth-child(even) {
+    background-color: var(--light-gray);
+}
+
+.accessibility-info {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.status-dot.live {
+    background-color: green; /* Green dot for live weather */
+}
+
+.status-dot.open {
+    background-color: green; /* Green dot for incline open */
+}
+
+.status-dot.closed {
+    background-color: red; /* Red dot for incline closed */
+}
+
+.status-label {
+    font-size: 14px;
+    color: #333;
+    vertical-align: middle;
+}

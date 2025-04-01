@@ -1,0 +1,157 @@
+/* Mailing List Page Specific Styles */
+
+/* Form Section */
+.mailing-list-section {
+    background-color: var(--light-gray);
+    padding: 3rem 0;
+    min-height: calc(100vh - 300px); /* Ensures the form section takes up most of the viewport height */
+    display: flex;
+    align-items: center;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--dark-gray);
+    font-size: 1.1rem;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(70, 130, 180, 0.2);
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--primary-color);
+}
+
+/* Required Field Indicator */
+.required {
+    color: var(--primary-color);
+}
+
+/* Form Hints */
+.form-hint {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Privacy Note */
+.privacy-note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Submit Button Group */
+.submit-group {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button.btn-primary {
+    padding: 0.75rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Form Validation Styles */
+input:invalid {
+    border-color: #dc3545;
+}
+
+input:invalid:focus {
+    box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+/* Success Message Styles */
+.success-message {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none; /* Hidden by default, shown via JavaScript */
+}
+
+.success-icon {
+    color: #28a745; /* Success green color */
+    margin-bottom: 1.5rem;
+}
+
+.success-message h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.success-message p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.success-message .btn {
+    margin-top: 1rem;
+}

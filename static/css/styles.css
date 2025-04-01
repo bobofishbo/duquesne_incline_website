@@ -399,6 +399,23 @@ section {
     color: var(--white);
 }
 
+.footer-mailing-list {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-mailing-list .footer-link {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-mailing-list .footer-link:hover {
+    text-decoration: underline;
+}
+
 .copyright {
     text-align: center;
     padding-top: 1rem;
