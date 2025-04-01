@@ -49,36 +49,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Product Filter */
-.product-filter {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
-}
-
-.filter-button {
-    background-color: var(--light-gray);
-    border: none;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.filter-button:hover {
-    background-color: var(--secondary-color);
-    color: var(--white);
-}
-
-.filter-button.active {
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
 /* Featured Products Section */
 .featured-products {
     background-color: var(--light-gray);
