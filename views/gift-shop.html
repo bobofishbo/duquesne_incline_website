@@ -187,12 +187,11 @@
             }
         });
         
-        // Prevent closing when clicking inside modal content
         $('.modal-content').click(function(e) {
             e.stopPropagation();
         });
         
-        // Hover effect for product cards
+        // Hover effect
         $('.product-card').hover(
             function() {
                 $(this).find('.quick-view').slideDown(200);
