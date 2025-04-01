@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Lora:ital@0;1&display=swap">
     <link rel="stylesheet" href="../static/css/styles.css">
     <link rel="stylesheet" href="../static/css/gift-shop.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -67,6 +69,10 @@
             
             <div class="products-grid">
                 <div class="product-card">
+                    <div class="product-image">
+                        <img src="../static/images/shotglass.png" alt="Slanted Shot Glass">
+                        <div class="quick-view">Quick View</div>
+                    </div>
                     <div class="product-info">
                         <h3>Slanted Shot Glass</h3>
                         <p>Our unique slanted shot glasses are a customer favorite! These specially designed glasses reflect the incline of our historic cable car.</p>
@@ -74,42 +80,40 @@
                 </div>
                 
                 <div class="product-card">
-                    <div class="product-info">
-                        <h3>Handmade Wooden Ornament</h3>
-                        <p>This handmade Incline wooden ornament is a big seller and is only available here at our gift shop.</p>
+                    <div class="product-image">
+                        <img src="../static/images/ornament.png" alt="Postcards of Pittsburgh">
+                        <div class="quick-view">Quick View</div>
                     </div>
-                </div>
-                
-                <div class="product-card">
                     <div class="product-info">
-                        <h3>Wendell August Forge Metal Plates</h3>
-                        <p>Browse our full assortment of Wendell August Forge metal plates featuring Pittsburgh landmarks.</p>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-info">
-                        <h3>Framed Pictures</h3>
-                        <p>All types of pictures, both framed and unframed, capturing the beauty and history of the Duquesne Incline.</p>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-info">
-                        <h3>Custom Designed Shirts</h3>
-                        <p>Custom designed shirts are available in youth and adult sizes, perfect for showing your Pittsburgh pride.</p>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <div class="product-info">
-                        <h3>Pittsburgh Postcards</h3>
-                        <p>We also have one of the best selections of postcards in the city, featuring iconic Pittsburgh views.</p>
+                        <h3>Wooden Ornament</h3>
+                        <p>This handmade Incline wooden ornament is a big seller
+                            and is only available here.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-image">
+                <img id="modal-product-image" src="" alt="Product Image">
+            </div>
+            <div class="modal-info">
+                <h2 id="modal-product-title"></h2>
+                <p id="modal-product-description"></p>
+                <div class="modal-details">
+                    <p><strong>Price:</strong> <span id="modal-product-price">Available in store</span></p>
+                    <p><strong>Availability:</strong> <span id="modal-product-availability">In Stock</span></p>
+                </div>
+                <div class="modal-cta">
+                    <p>Visit our gift shop to purchase this item or call <a href="tel:+14123811665">412-381-1665</a> for more information.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Visit Info -->
     <section class="shop-visit-info">
@@ -156,5 +160,48 @@
             </div>
         </div>
     </footer>
+
+    <!-- jQuery Script -->
+    <script>
+    $(document).ready(function() {
+        // Quick view functionality
+        $('.quick-view').click(function() {
+            const productCard = $(this).closest('.product-card');
+            const productImage = productCard.find('img').attr('src');
+            const productTitle = productCard.find('h3').text();
+            const productDescription = productCard.find('p').text();
+            
+            // Populate modal with product details
+            $('#modal-product-image').attr('src', productImage);
+            $('#modal-product-title').text(productTitle);
+            $('#modal-product-description').text(productDescription);
+            
+            // Show modal
+            $('#product-modal').fadeIn(300);
+        });
+        
+        // Close modal when clicking X or outside the modal
+        $('.close-modal, .modal').click(function(e) {
+            if (e.target === this) {
+                $('#product-modal').fadeOut(300);
+            }
+        });
+        
+        // Prevent closing when clicking inside modal content
+        $('.modal-content').click(function(e) {
+            e.stopPropagation();
+        });
+        
+        // Hover effect for product cards
+        $('.product-card').hover(
+            function() {
+                $(this).find('.quick-view').slideDown(200);
+            },
+            function() {
+                $(this).find('.quick-view').slideUp(200);
+            }
+        );
+    });
+    </script>
 </body>
 </html>
